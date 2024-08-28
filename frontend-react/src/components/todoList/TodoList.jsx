@@ -13,11 +13,16 @@ export default function TodoList() {
 
         setList([...list, newItem]);  // Add the new item to the list
 
-        const response = await axios.post("http://localhost:8000", newItem);
+        const response = await axios.post('http://localhost:8000/todo/add_item', newItem, 
+            {
+                headers: {
+                'Content-Type': 'text/plain'
+            }
+          });
 
         if(!response) return;
 
-        console.log("response", response.data?.message)
+        console.log("response", response)
         
 
         setNewItem("");  // Clear the input field

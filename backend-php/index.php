@@ -1,5 +1,6 @@
 <?php
 
+echo "<script>console.log('STARTED ADD ITEM');</script>";
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

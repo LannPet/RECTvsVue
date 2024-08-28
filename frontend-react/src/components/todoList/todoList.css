@@ -63,3 +63,38 @@ h1{
 .item-name{
     margin: 5px 0;
 }
+
+
+@media screen and (max-width: 1400px) {
+    .todolist-container{
+        width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    .todolist-container{
+        width: 80%;
+    }
+  }
+
+
+  @media screen and (max-width: 570px) {
+    .todolist-container{
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    h1{
+        text-align: center;
+
+    }
+
+    .input-container{
+        width: 90%;
+    }
+
+    .list-item-container{
+        width: 90%;
+    }
+  }
